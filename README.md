@@ -39,10 +39,10 @@ Katmanlı mimariden başlayıp güvenlik, migration, concurrency ve production'a
 | # | Proje | Odak Noktası | Öne Çıkan Teknolojiler | Repo |
 |---|---|---|---|---|
 | 1 | Student App | Katmanlı mimari temelleri, REST CRUD | Spring Web MVC | [↗](https://github.com/grkmuysl/spring-boot-student-crud-api) |
-| 2 | Library Management | Gerçek veritabanı, DTO, validasyon, dinamik filtreleme | Spring Data JPA, PostgreSQL | [↗](https://github.com/grkmuysl/library-management) |
-| 3 | Multi User Todo App | Authentication/authorization, kullanıcı bazlı izolasyon, pagination | Spring Security, JWT | [↗](https://github.com/grkmuysl/multi-user-todo) |
-| 4 | Order Service Application | Domain'e göre paketleme, migration, concurrency kontrolü | Flyway, Testcontainers | [↗](https://github.com/grkmuysl/order-service-application) |
-| 5 | Event Booking Application | Rol tabanlı yetki, refresh token, cache, rate limiting | MapStruct, Caffeine, Bucket4j | [↗](https://github.com/grkmuysal/event-booking-application) |
+| 2 | Library Management | Gerçek veritabanı, DTO, validasyon, dinamik filtreleme | Spring Data JPA, PostgreSQL | [↗](https://github.com/grkmuysl/spring-boot-library-management) |
+| 3 | Multi User Todo App | Authentication/authorization, kullanıcı bazlı izolasyon, pagination | Spring Security, JWT | [↗](https://github.com/grkmuysl/spring-boot-multi-user-todo) |
+| 4 | Order Service Application | Domain'e göre paketleme, migration, concurrency kontrolü | Flyway, Testcontainers | [↗](https://github.com/grkmuysl/OrderServiceApplication) |
+| 5 | Event Booking Application | Rol tabanlı yetki, refresh token, cache, rate limiting | MapStruct, Caffeine, Bucket4j | [↗](https://github.com/grkmuysl/spring-boot-event-booking-application) |
 
 > Her proje bilinçli olarak bir önceki projenin eksiklerini ele alacak şekilde tasarlandı; production-ready olma amacı gütmeden, konuları derinlemesine ve izlenebilir şekilde öğrenmek için geliştirildi.
 
