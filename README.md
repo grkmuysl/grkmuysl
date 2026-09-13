@@ -2,7 +2,7 @@
 
 # Merhaba, ben Görkem 👋
 
-**Full-Stack Yazılım Geliştirici**  React / React Native · Spring Boot ile derinleşiyor
+**Full-Stack Yazılım Geliştirici** · React / React Native · Spring Boot ile full-stack projeler geliştiriyorum
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/gorkemuysal)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:gorkmuysal@gmail.com)
@@ -16,7 +16,21 @@
 
 ## 🇹🇷 Türkçe
 
-Gebze Teknik Üniversitesi Bilgisayar Mühendisliği öğrencisiyim, 1 yılı aşkın kurumsal deneyime sahip bir Full-Stack Yazılım Geliştiricisiyim. React ve React Native ekosistemine odaklanarak ölçeklenebilir web bileşenleri ve cross-platform mobil uygulamalar geliştiriyor, Spring Boot ile backend geliştirme yetkinliğimi aktif olarak derinleştiriyorum. Teknik teoriyi, mağazalarda (App Store / Play Store) canlıya aldığım kullanıcı odaklı ürünlerle birleştirmeye öncelik veriyorum.
+Gebze Teknik Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. React ve React Native ekosisteminde web ve mobil ürünler geliştirirken, Spring Boot ile backend tarafını da aktif olarak ilerletiyorum. Teorik bilgiyi gerçek kullanıcı odaklı ürünler ve full-stack projeler üzerinden öğrenmeye odaklanıyorum.
+
+Şu anda farklı full-stack projelerde backend, web ve mobil katmanlarını birlikte tasarlayıp geliştiriyorum. Bu süreçte aynı API ve iş mantığını farklı platformlara taşıyarak tutarlı ürünler üretmeye çalışıyorum.
+
+### 🧩 Full-Stack Çalışmalarım
+
+Kişiler, kategoriler ve doğum günü takibi gibi alanlarda çalışan projeler geliştiriyorum. Bu kapsamda backend, web ve mobil uygulamaları aynı ekosistemde birleştirerek deneyim kazanıyorum.
+
+- **Birthday Tracker:** doğum günü takibi, kategori yönetimi ve kullanıcı bazlı veri izolasyonu
+- **Backend:** Spring Boot, Spring Security, JWT, JPA, Flyway, PostgreSQL
+- **Web:** React + TypeScript + Vite + TanStack Query + shadcn/ui
+- **Mobil:** Expo + React Native + Expo Router
+- **Temel akış:** kullanıcı kaydı/girişi, JWT access/refresh token, kişi CRUD, kategori yönetimi, yaklaşan doğum günleri listesi
+
+[![GitHub](https://img.shields.io/badge/GitHub-birthdayTracker-181717?style=flat&logo=github&logoColor=white)](https://github.com/grkmuysl/birthdayTracker)
 
 ### 🛠️ Teknolojiler
 
@@ -39,12 +53,12 @@ Katmanlı mimariden başlayıp güvenlik, migration, concurrency ve production'a
 | # | Proje | Odak Noktası | Öne Çıkan Teknolojiler | Repo |
 |---|---|---|---|---|
 | 1 | Student App | Katmanlı mimari temelleri, REST CRUD | Spring Web MVC | [↗](https://github.com/grkmuysl/spring-boot-student-crud-api) |
-| 2 | Library Management | Gerçek veritabanı, DTO, validasyon, dinamik filtreleme | Spring Data JPA, PostgreSQL | [↗](https://github.com/grkmuysl/spring-boot-library-management) |
-| 3 | Multi User Todo App | Authentication/authorization, kullanıcı bazlı izolasyon, pagination | Spring Security, JWT | [↗](https://github.com/grkmuysl/spring-boot-multi-user-todo) |
-| 4 | Order Service Application | Domain'e göre paketleme, migration, concurrency kontrolü | Flyway, Testcontainers | [↗](https://github.com/grkmuysl/OrderServiceApplication) |
-| 5 | Event Booking Application | Rol tabanlı yetki, refresh token, cache, rate limiting | MapStruct, Caffeine, Bucket4j | [↗](https://github.com/grkmuysl/spring-boot-event-booking-application) |
+| 2 | Library Management | Gerçek veritabanı, DTO, validasyon, dinamik filtreleme | Spring Data JPA, PostgreSQL | [↗](https://github.com/grkmuysl/library-management) |
+| 3 | Multi User Todo App | Authentication/authorization, kullanıcı bazlı izolasyon, pagination | Spring Security, JWT | [↗](https://github.com/grkmuysl/multi-user-todo) |
+| 4 | Order Service Application | Domain'e göre paketleme, migration, concurrency kontrolü | Flyway, Testcontainers | [↗](https://github.com/grkmuysl/order-service-application) |
+| 5 | Event Booking Application | Rol tabanlı yetki, refresh token, cache, rate limiting | MapStruct, Caffeine, Bucket4j | [↗](https://github.com/grkmuysl/event-booking-application) |
 
-> Her proje bilinçli olarak bir önceki projenin eksiklerini ele alacak şekilde tasarlandı; production-ready olma amacı gütmeden, konuları derinlemesine ve izlenebilir şekilde öğrenmek için geliştirildi.
+> Her proje bilinçli olarak bir önceki projenin eksiklerini ele alacak şekilde tasarlandı; amaç üretime hazır olma kaygısı değil, konuları derinlemesine ve izlenebilir şekilde öğrenmekti.
 
 ### 📱 Diğer Projeler
 
@@ -56,7 +70,21 @@ Katmanlı mimariden başlayıp güvenlik, migration, concurrency ve production'a
 
 ## 🇬🇧 English
 
-I'm a Computer Engineering student at Gebze Technical University and a Full-Stack Software Developer with over a year of corporate experience. I focus on the React and React Native ecosystem to build scalable web components and cross-platform mobile apps, while actively deepening my backend skills with Spring Boot. I prioritize combining technical theory with user-focused products I've shipped to the App Store / Play Store.
+I'm a Computer Engineering student at Gebze Technical University and a Full-Stack Software Developer with hands-on experience building web and mobile products. I focus on the React and React Native ecosystem to create scalable interfaces and cross-platform experiences, while also deepening my backend work with Spring Boot.
+
+I currently work across several full-stack projects, with **Birthday Tracker** as one example of how I combine backend, web, and mobile layers into a single product experience. My goal is to build consistent end-to-end solutions by reusing the same API design and business logic across platforms.
+
+### 🧩 Full-Stack Projects
+
+I build applications around personal contact and birthday tracking workflows. In this space, I design and develop the backend, web frontend, and mobile app together as one system.
+
+- **Birthday Tracker:** birthday tracking, category management, and user-scoped data isolation
+- **Backend:** Spring Boot, Spring Security, JWT, JPA, Flyway, PostgreSQL
+- **Web:** React + TypeScript + Vite + TanStack Query + shadcn/ui
+- **Mobile:** Expo + React Native + Expo Router
+- **Core flow:** authentication, JWT access/refresh flow, person CRUD, category management, upcoming birthday listings
+
+[![GitHub](https://img.shields.io/badge/GitHub-birthdayTracker-181717?style=flat&logo=github&logoColor=white)](https://github.com/grkmuysl/birthdayTracker)
 
 ### 🛠️ Tech Stack
 
@@ -82,9 +110,9 @@ A five-project series progressing from basic layered architecture to security, m
 | 2 | Library Management | Real database, DTOs, validation, dynamic filtering | Spring Data JPA, PostgreSQL | [↗](https://github.com/grkmuysl/library-management) |
 | 3 | Multi User Todo App | Authentication/authorization, per-user data isolation, pagination | Spring Security, JWT | [↗](https://github.com/grkmuysl/multi-user-todo) |
 | 4 | Order Service Application | Domain-driven packaging, migrations, concurrency control | Flyway, Testcontainers | [↗](https://github.com/grkmuysl/order-service-application) |
-| 5 | Event Booking Application | Role-based authorization, refresh tokens, caching, rate limiting | MapStruct, Caffeine, Bucket4j | [↗](https://github.com/grkmuysal/event-booking-application) |
+| 5 | Event Booking Application | Role-based authorization, refresh tokens, caching, rate limiting | MapStruct, Caffeine, Bucket4j | [↗](https://github.com/grkmuysl/event-booking-application) |
 
-> Each project was deliberately designed to address the previous one's gaps.Not aiming for production-readiness, but for a thorough, traceable way of learning each topic.
+> Each project was deliberately designed to address the previous one’s gaps. The goal was not to aim for full production-readiness at once, but to learn each topic in a controlled, traceable way.
 
 ### 📱 Other Projects
 
