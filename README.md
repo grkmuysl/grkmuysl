@@ -18,47 +18,58 @@
 
 Gebze Teknik Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. React ve React Native ekosisteminde web ve mobil ürünler geliştirirken, Spring Boot ile backend tarafını da aktif olarak ilerletiyorum. Teorik bilgiyi gerçek kullanıcı odaklı ürünler ve full-stack projeler üzerinden öğrenmeye odaklanıyorum.
 
-Şu anda farklı full-stack projelerde backend, web ve mobil katmanlarını birlikte tasarlayıp geliştiriyorum. Bu süreçte aynı API ve iş mantığını farklı platformlara taşıyarak tutarlı ürünler üretmeye çalışıyorum.
+Şu anda farklı full-stack projelerde backend, web ve mobil katmanlarını birlikte tasarlayıp geliştiriyorum. Bu süreçte aynı API ve iş mantığını farklı platformlara taşıyarak tutarlı ürünler üretmeye çalışıyorum. Son dönemde backend tarafında özellikle **bankacılık sektöründe öne çıkan konulara** odaklanıyorum: mikroservis mimarisi, OAuth2 / Keycloak ile güvenlik, Kafka ile event-driven iletişim ve dağıtık sistemlerde veri tutarlılığı.
+
+### 🏦 Öne Çıkan Proje: MiniBank
+
+Mikroservis tabanlı bir para transferi platformu. Hesap, transfer ve dolandırıcılık kontrolü ayrı servislerde çalışıyor; transferler Kafka üzerinden yürüyen bir **Saga** ile yönetiliyor.
+
+- **Güvenlik:** Keycloak (OAuth2 / OIDC), RS256 token doğrulama, audience kontrolü, rol ve kayıt bazlı yetkilendirme
+- **Mikroservisler:** API Gateway, database-per-service, Kafka ile Saga orkestrasyonu, outbox / inbox, DLT
+- **Finansal doğruluk:** `BigDecimal`, bloke (provizyon) modeli, ledger, idempotency, deadlock'a karşı sıralı kilitleme
+- **Altyapı:** Kendi yazdığım multi-stage Dockerfile'lar, Docker Compose, Redis ile dağıtık rate limiting
+
+> Bu projenin kodlarının büyük kısmı yapay zeka (Claude) desteğiyle yazıldı. Amaç; Keycloak, Kafka ve Saga gibi kapsamlı konuları adım adım tasarlayıp test ederek daha hızlı öğrenmekti. Detaylar projenin README dosyasında.
+
+[![GitHub](https://img.shields.io/badge/GitHub-minibank-181717?style=flat&logo=github&logoColor=white)](https://github.com/grkmuysl/minibank)
 
 ### 🧩 Full-Stack Çalışmalarım
 
 Kişiler, kategoriler ve doğum günü takibi gibi alanlarda çalışan projeler geliştiriyorum. Bu kapsamda backend, web ve mobil uygulamaları aynı ekosistemde birleştirerek deneyim kazanıyorum.
 
 - **Birthday Tracker:** doğum günü takibi, kategori yönetimi ve kullanıcı bazlı veri izolasyonu
-- **Backend:** Spring Boot, Spring Security, JWT, JPA, Flyway, PostgreSQL
+- **Backend:** Spring Boot, Spring Security, JWT, JPA, Flyway, PostgreSQL, Kafka (outbox pattern)
 - **Web:** React + TypeScript + Vite + TanStack Query + shadcn/ui
 - **Mobil:** Expo + React Native + Expo Router
-- **Temel akış:** kullanıcı kaydı/girişi, JWT access/refresh token, kişi CRUD, kategori yönetimi, yaklaşan doğum günleri listesi
+- **Temel akış:** kullanıcı kaydı/girişi, JWT access/refresh token, kişi CRUD, kategori yönetimi, yaklaşan doğum günleri listesi, ayrı bir servis üzerinden e-posta bildirimleri
 
 [![GitHub](https://img.shields.io/badge/GitHub-birthdayTracker-181717?style=flat&logo=github&logoColor=white)](https://github.com/grkmuysl/birthdayTracker)
 
 ### 🛠️ Teknolojiler
 
 `React` `React Native` `JavaScript (ES6+)` `TypeScript` `Redux / Context API` `Chakra UI` `Bootstrap`
-`Java` `Spring Boot` `Spring Data JPA` `Spring Security` `PostgreSQL` `SQL`
+`Java` `Spring Boot` `Spring Data JPA` `Spring Security` `Spring Cloud Gateway` `PostgreSQL` `SQL`
+`Apache Kafka` `Keycloak` `Redis` `Docker`
 `Node.js` `Supabase` `Firebase`
 `Git & GitHub` `Vercel` `Railway`
 
-### 💼 İş Deneyimi
-
-| Şirket | Rol | Dönem |
-|---|---|---|
-| Safespeech Yazılım Bilişim Danışmanlık A.Ş. | Yazılım Stajyeri | Haz 2026 – Ağu 2026 |
-| İnvivo Yazılım ve Teknoloji A.Ş. | Remote Front-End Developer | Tem 2023 – Eki 2024 |
-
 ### 🚀 Spring Boot Öğrenme Yolculuğu
 
-Katmanlı mimariden başlayıp güvenlik, migration, concurrency ve production'a yakın pratiklere doğru ilerleyen 5 projelik bir seri:
+Katmanlı mimariden başlayıp güvenlik, migration, concurrency, event-driven mimari ve mikroservislere doğru ilerleyen 7 projelik bir seri:
 
 | # | Proje | Odak Noktası | Öne Çıkan Teknolojiler | Repo |
 |---|---|---|---|---|
 | 1 | Student App | Katmanlı mimari temelleri, REST CRUD | Spring Web MVC | [↗](https://github.com/grkmuysl/spring-boot-student-crud-api) |
 | 2 | Library Management | Gerçek veritabanı, DTO, validasyon, dinamik filtreleme | Spring Data JPA, PostgreSQL | [↗](https://github.com/grkmuysl/library-management) |
-| 3 | Multi User Todo App | Authentication/authorization, kullanıcı bazlı izolasyon, pagination | Spring Security, JWT | [↗](https://github.com/grkmuysl/multi-user-todo) |
-| 4 | Order Service Application | Domain'e göre paketleme, migration, concurrency kontrolü | Flyway, Testcontainers | [↗](https://github.com/grkmuysl/order-service-application) |
-| 5 | Event Booking Application | Rol tabanlı yetki, refresh token, cache, rate limiting | MapStruct, Caffeine, Bucket4j | [↗](https://github.com/grkmuysl/event-booking-application) |
+| 3 | Multi User Todo App | Authentication/authorization, kullanıcı bazlı izolasyon, pagination | Spring Security, JWT | [↗](https://github.com/grkmuysl/spring-boot-multi-user-todo) |
+| 4 | Order Service Application | Domain'e göre paketleme, migration, concurrency kontrolü | Flyway, Testcontainers | [↗](https://github.com/grkmuysl/spring-boot-order-service-app) |
+| 5 | Event Booking Application | Rol tabanlı yetki, refresh token, cache, rate limiting | MapStruct, Caffeine, Bucket4j | [↗](https://github.com/grkmuysl/spring-boot-event-booking-application) |
+| 6 | Birthday Tracker | Full-stack ürün, outbox pattern, ayrı bildirim servisi | React, Expo, Kafka | [↗](https://github.com/grkmuysl/birthdayTracker) |
+| 7 | MiniBank \* | Mikroservisler, OAuth2 / Keycloak, Saga, Docker | Keycloak, Kafka, Spring Cloud Gateway, Redis | [↗](https://github.com/grkmuysl/minibank) |
 
 > Her proje bilinçli olarak bir önceki projenin eksiklerini ele alacak şekilde tasarlandı; amaç üretime hazır olma kaygısı değil, konuları derinlemesine ve izlenebilir şekilde öğrenmekti.
+>
+> \* MiniBank'ta kodun büyük kısmı yapay zeka desteğiyle yazıldı; amaç kapsamlı yeni konuları daha hızlı öğrenmekti.
 
 ### 📱 Diğer Projeler
 
@@ -72,47 +83,58 @@ Katmanlı mimariden başlayıp güvenlik, migration, concurrency ve production'a
 
 I'm a Computer Engineering student at Gebze Technical University and a Full-Stack Software Developer with hands-on experience building web and mobile products. I focus on the React and React Native ecosystem to create scalable interfaces and cross-platform experiences, while also deepening my backend work with Spring Boot.
 
-I currently work across several full-stack projects, with **Birthday Tracker** as one example of how I combine backend, web, and mobile layers into a single product experience. My goal is to build consistent end-to-end solutions by reusing the same API design and business logic across platforms.
+I currently work across several full-stack projects, with **Birthday Tracker** as one example of how I combine backend, web, and mobile layers into a single product experience. My goal is to build consistent end-to-end solutions by reusing the same API design and business logic across platforms. On the backend side, I'm currently focusing on **topics that matter in the banking sector**: microservice architecture, security with OAuth2 / Keycloak, event-driven communication with Kafka, and data consistency in distributed systems.
+
+### 🏦 Featured Project: MiniBank
+
+A microservice-based money transfer platform. Accounts, transfers, and fraud checks run as separate services; transfers are coordinated by a **Saga** running over Kafka.
+
+- **Security:** Keycloak (OAuth2 / OIDC), RS256 token validation, audience checks, role- and record-based authorization
+- **Microservices:** API Gateway, database-per-service, Saga orchestration over Kafka, outbox / inbox, DLT
+- **Financial correctness:** `BigDecimal`, funds hold (authorization) model, ledger, idempotency, ordered locking to prevent deadlocks
+- **Infrastructure:** Hand-written multi-stage Dockerfiles, Docker Compose, distributed rate limiting with Redis
+
+> Most of the code in this project was written with the help of AI (Claude). The goal was to learn complex topics such as Keycloak, Kafka, and Sagas faster by designing and testing them step by step. See the project's README for details.
+
+[![GitHub](https://img.shields.io/badge/GitHub-minibank-181717?style=flat&logo=github&logoColor=white)](https://github.com/grkmuysl/minibank)
 
 ### 🧩 Full-Stack Projects
 
 I build applications around personal contact and birthday tracking workflows. In this space, I design and develop the backend, web frontend, and mobile app together as one system.
 
 - **Birthday Tracker:** birthday tracking, category management, and user-scoped data isolation
-- **Backend:** Spring Boot, Spring Security, JWT, JPA, Flyway, PostgreSQL
+- **Backend:** Spring Boot, Spring Security, JWT, JPA, Flyway, PostgreSQL, Kafka (outbox pattern)
 - **Web:** React + TypeScript + Vite + TanStack Query + shadcn/ui
 - **Mobile:** Expo + React Native + Expo Router
-- **Core flow:** authentication, JWT access/refresh flow, person CRUD, category management, upcoming birthday listings
+- **Core flow:** authentication, JWT access/refresh flow, person CRUD, category management, upcoming birthday listings, email notifications via a separate service
 
 [![GitHub](https://img.shields.io/badge/GitHub-birthdayTracker-181717?style=flat&logo=github&logoColor=white)](https://github.com/grkmuysl/birthdayTracker)
 
 ### 🛠️ Tech Stack
 
 `React` `React Native` `JavaScript (ES6+)` `TypeScript` `Redux / Context API` `Chakra UI` `Bootstrap`
-`Java` `Spring Boot` `Spring Data JPA` `Spring Security` `PostgreSQL` `SQL`
+`Java` `Spring Boot` `Spring Data JPA` `Spring Security` `Spring Cloud Gateway` `PostgreSQL` `SQL`
+`Apache Kafka` `Keycloak` `Redis` `Docker`
 `Node.js` `Supabase` `Firebase`
 `Git & GitHub` `Vercel` `Railway`
 
-### 💼 Experience
-
-| Company | Role | Period |
-|---|---|---|
-| Safespeech Software & IT Consulting Inc. | Software Intern | Jun 2026 – Aug 2026 |
-| İnvivo Software & Technology Inc. | Remote Front-End Developer | Jul 2023 – Oct 2024 |
-
 ### 🚀 Spring Boot Learning Journey
 
-A five-project series progressing from basic layered architecture to security, migrations, concurrency, and near-production practices:
+A seven-project series progressing from basic layered architecture to security, migrations, concurrency, event-driven architecture, and microservices:
 
 | # | Project | Focus | Key Tech | Repo |
 |---|---|---|---|---|
 | 1 | Student App | Layered architecture basics, REST CRUD | Spring Web MVC | [↗](https://github.com/grkmuysl/spring-boot-student-crud-api) |
 | 2 | Library Management | Real database, DTOs, validation, dynamic filtering | Spring Data JPA, PostgreSQL | [↗](https://github.com/grkmuysl/library-management) |
-| 3 | Multi User Todo App | Authentication/authorization, per-user data isolation, pagination | Spring Security, JWT | [↗](https://github.com/grkmuysl/multi-user-todo) |
-| 4 | Order Service Application | Domain-driven packaging, migrations, concurrency control | Flyway, Testcontainers | [↗](https://github.com/grkmuysl/order-service-application) |
-| 5 | Event Booking Application | Role-based authorization, refresh tokens, caching, rate limiting | MapStruct, Caffeine, Bucket4j | [↗](https://github.com/grkmuysl/event-booking-application) |
+| 3 | Multi User Todo App | Authentication/authorization, per-user data isolation, pagination | Spring Security, JWT | [↗](https://github.com/grkmuysl/spring-boot-multi-user-todo) |
+| 4 | Order Service Application | Domain-driven packaging, migrations, concurrency control | Flyway, Testcontainers | [↗](https://github.com/grkmuysl/spring-boot-order-service-app) |
+| 5 | Event Booking Application | Role-based authorization, refresh tokens, caching, rate limiting | MapStruct, Caffeine, Bucket4j | [↗](https://github.com/grkmuysl/spring-boot-event-booking-application) |
+| 6 | Birthday Tracker | Full-stack product, outbox pattern, separate notification service | React, Expo, Kafka | [↗](https://github.com/grkmuysl/birthdayTracker) |
+| 7 | MiniBank \* | Microservices, OAuth2 / Keycloak, Saga, Docker | Keycloak, Kafka, Spring Cloud Gateway, Redis | [↗](https://github.com/grkmuysl/minibank) |
 
 > Each project was deliberately designed to address the previous one’s gaps. The goal was not to aim for full production-readiness at once, but to learn each topic in a controlled, traceable way.
+>
+> \* Most of MiniBank's code was written with AI assistance; the goal was to learn complex new topics faster.
 
 ### 📱 Other Projects
 
